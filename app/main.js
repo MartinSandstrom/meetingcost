@@ -6,6 +6,7 @@ $(function(){
 	var $cost = $('#cost');
 	var $stop = $('#stop');
 	var $result = $('#result');
+	var $startTime = $('#start-time');
 	var counter = 0;
 	var myInterval;
 
@@ -18,6 +19,7 @@ $(function(){
 		var costPerAttendee = $cost.val();
 
 		var costPerSecond = (costPerAttendee / 3600) * numberOfAttendees;
+		$startTime.text(new Date().toTimeString().split(' ')[0]);
 
 		myInterval = setInterval(function () {
 			++counter;
