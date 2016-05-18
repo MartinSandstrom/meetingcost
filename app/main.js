@@ -32,7 +32,4 @@ $(function(){
 	$stop.click(function(){
 		clearInterval(myInterval);
 	});
-
-	// to stop the counter
-
 });
