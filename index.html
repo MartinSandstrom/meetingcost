@@ -20,11 +20,11 @@
 		<form>
 		  <div class="form-group">
 		    <label for="attendees">Number of attendees</label>
-		    <input type="number" class="form-control" id="attendees" placeholder="0">
+		    <input type="number" class="form-control" id="attendees" value="4">
 		  </div>
 		  <div class="form-group">
 		    <label for="cost">Cost/attendee/hour</label>
-		    <input type="number" class="form-control" id="cost" placeholder="0">
+		    <input type="number" class="form-control" id="cost" value="1000">
 		  </div>
 		  <button id="calculate" type="button" class="btn btn-default">Calculate</button>
 		  <button id="stop" type="button" class="btn btn-default">Stop</button>
@@ -34,6 +34,7 @@
 		<div id="result" class="jumbotron">
 			<p>This meeting currently have the cost of:</p>
 			<h1><span id="counter">0</span> :-</h1>
+			<span>Calculation started <span id="start-time"></span></span>
 		</div>
 	</div>
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
